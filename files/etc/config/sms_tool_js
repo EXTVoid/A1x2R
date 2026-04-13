@@ -12,7 +12,7 @@ config sms_tool_js
 	option forward_sms_enabled '0'
 	option emailprovider 'custom'
 	option forward_sms_mail_security 'tls'
-	option ussd '1'
+	option ussd '0'
 	option pdu '0'
 	option coding 'auto'
 	option lednotify '0'
@@ -21,3 +21,4 @@ config sms_tool_js
 	option ledtype 'D'
 	option sms_count '0'
 	option smsled 'red:boot'
+	option ontopsms '0'
