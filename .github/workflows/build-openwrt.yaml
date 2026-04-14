@@ -114,6 +114,7 @@ jobs:
       - name: Install Packages
         env:
           DEBIAN_FRONTEND: noninteractive
+        timeout-minutes: 15
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get -qq install -y \
@@ -244,7 +245,7 @@ jobs:
 
       - name: Compile Tools
         if: ${{ env.REBUILD_CHECK == 'true' }}
-        timeout-minutes: 60
+        timeout-minutes: 120
         run: |
           cd $OPENWRT_ROOT_PATH
           echo -e "$(nproc) Thread Compile"
@@ -405,7 +406,7 @@ jobs:
           make package/index
 
       - name: Generate Firmware
-        timeout-minutes: 60
+        timeout-minutes: 30
         run: |
           cd $OPENWRT_ROOT_PATH
           make package/install -j$THREAD || make package/install -j1 V=s
