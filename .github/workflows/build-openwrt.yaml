@@ -198,7 +198,7 @@ jobs:
 
       - name: Get Toolchain Hash
         continue-on-error: true
-        uses: robinraju/release-downloader@v1.12
+        uses: robinraju/release-downloader@v1.13
         with:
           token: ${{ env.TOKEN }}
           repository: ${{ GITHUB.REPOSITORY }}
@@ -307,7 +307,7 @@ jobs:
 
       - name: Download Toolchain Image From Release
         if: ${{ steps.toolchain.outcome == 'skipped' }}
-        uses: robinraju/release-downloader@v1.12
+        uses: robinraju/release-downloader@v1.13
         with:
           token: ${{ env.TOKEN }}
           repository: ${{ GITHUB.REPOSITORY }}
