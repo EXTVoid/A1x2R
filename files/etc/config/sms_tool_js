@@ -1,6 +1,7 @@
 config sms_tool_js
 	option readport '/dev/ttyACM0'
 	option sendport '/dev/ttyACM0'
+    option callport '/dev/ttyACM0'
 	option ussdport '/dev/ttyACM0'
 	option atport '/dev/ttyACM0'
 	option storage 'SM'
