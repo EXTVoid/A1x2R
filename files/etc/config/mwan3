@@ -50,25 +50,20 @@ config member 'wwan_m2_w3'
 config policy 'balanced'
 	list use_member 'wan_m1_w2'
 	list use_member 'wwan_m1_w2'
-	option last_resort 'unreachable'
 
 config policy 'wan_only'
 	list use_member 'wan_m2_w3'
-	option last_resort 'unreachable'
 
 config policy 'wwan_only'
 	list use_member 'wwan_m2_w3'
-	option last_resort 'unreachable'
 
 config policy 'wan_pri_wwan'
 	list use_member 'wan_m1_w2'
 	list use_member 'wwan_m2_w3'
-	option last_resort 'unreachable'
 
 config policy 'wwan_pri_wan'
 	list use_member 'wan_m2_w3'
 	list use_member 'wwan_m1_w2'
-	option last_resort 'unreachable'
 
 config rule 'https'
 	option sticky '1'
