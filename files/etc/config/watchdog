@@ -2,7 +2,7 @@ config watchdog
 	option enabled '0'
 	option iface 'wwan'
 	option dest '1.1.1.1'
-	option delay '120'
+	option delay '300'
 	option period '15'
 	option period_count '1'
 	option action 'wan'
