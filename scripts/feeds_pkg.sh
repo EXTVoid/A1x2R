@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Remove packages"
-FOLDER=("openwrt_packages" "small")
+FOLDER=("openwrt_packages" "small" "small_package")
 for i in "${FOLDER[@]}"; do
 	if [ -d "./feeds/$i" ]; then
 		rm -rif ./feeds/"$i"/{base-files,luci-app-3ginfo-lite,luci-app-lite-watchdog,modemband,luci-app-modemband,luci-app-sms-tool-js,luci-app-v2raya,luci-app-xray,modemband,sms-tool,v2fly-geodata,v2ray-core,v2raya,xray-core}
