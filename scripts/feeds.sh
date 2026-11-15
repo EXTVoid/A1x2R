@@ -14,8 +14,6 @@ src-git luci_app_3ginfo_lite https://github.com/4IceG/luci-app-3ginfo-lite
 src-git luci_app_lite_watchdog https://github.com/4IceG/luci-app-lite-watchdog
 src-git luci_app_modemband https://github.com/4IceG/luci-app-modemband
 src-git luci_app_sms_tool_js https://github.com/4IceG/luci-app-sms-tool-js
-src-git luci_app_xray https://github.com/yichya/luci-app-xray
 src-git modemband https://github.com/obsy/modemband
 src-git my_pkg https://github.com/EXTVoid/My_PKG
-src-git v2raya_openwrt https://github.com/v2rayA/v2raya-openwrt
 EOF
