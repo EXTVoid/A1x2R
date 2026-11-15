@@ -18,6 +18,4 @@ src-git luci_app_xray https://github.com/yichya/luci-app-xray
 src-git modemband https://github.com/obsy/modemband
 src-git my_pkg https://github.com/EXTVoid/My_PKG
 src-git v2raya_openwrt https://github.com/v2rayA/v2raya-openwrt
-src-git zapret https://github.com/remittor/zapret-openwrt;zap1
-src-git zapret2 https://github.com/EXTVoid/zapret-openwrt;master
 EOF
