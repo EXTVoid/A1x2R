@@ -7,7 +7,7 @@ cat >> ./feeds.conf.default <<EOF
 # Extra feeds
 # src-git openwrt_packages https://github.com/kenzok8/openwrt-packages
 # src-git small https://github.com/kenzok8/small
-# src-git small_package https://github.com/kenzok8/small-package
+src-git small_package https://github.com/kenzok8/small-package
 
 # Extra packages
 src-git luci_app_3ginfo_lite https://github.com/4IceG/luci-app-3ginfo-lite
